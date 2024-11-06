@@ -1,0 +1,14 @@
+#Timer$.py
+import os
+import time
+second=0
+minute=0
+while True:
+    time.sleep(1)
+    os.system('cls')
+    print(minute,":",second+1)
+    second+=1
+    if second>59:
+        print(minute+1)
+        minute+=1
+        second=0
